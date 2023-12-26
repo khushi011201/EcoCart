@@ -80,6 +80,12 @@ const Cart = () => {
                                     <span>Total:</span>
                                     <span className="price">${round(cartTotal() + SHIPPING_CHARGES, 2)}</span>
                                 </div>
+                                
+                            </div>
+                            <div >
+                            <Link to="/Checkout">
+                                <button className="remove my-1"> Checkout</button>
+                                </Link>
                             </div>
                         </div>
                     </div>

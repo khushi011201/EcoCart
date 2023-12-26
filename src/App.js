@@ -7,6 +7,7 @@ import { Cart } from "./pages/cart"
 import { NotFound } from "./pages/not-found"
 
 import { useCart } from './context/cart'
+import Checkout from './components/checkout/Checkout'
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
         <Route path="/product/:productId" element={<Product />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="*" element={<NotFound />} />
+        <Route path="Checkout" element={<Checkout/>}/>
       </Routes>
     </>
   );
